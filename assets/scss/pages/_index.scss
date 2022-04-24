@@ -1,0 +1,130 @@
+/* Diseño - Index */
+
+.main-presentation a{
+
+    transition: all 400ms linear;
+
+    &:hover{
+
+        transform: scale(1.01);
+
+    }
+
+}
+
+@mixin pre-backgrounds($g-a, $bg-img, $bg-at, $bg-re, $bg-sz, $h-pre) {
+    
+    grid-area: $g-a;
+    background-image: $bg-img;
+    background-attachment: $bg-at;
+    background-repeat: $bg-re;
+    background-size: $bg-sz;
+    height: $h-pre;
+
+}
+
+.presentation-1{
+
+    @include pre-backgrounds(pre1, url(../img/presentation-2.jpg), fixed, no-repeat, 50vw 100%, 35.2rem);
+
+}
+
+.presentation-2{
+
+    @include pre-backgrounds(pre2, url(../img/presentation-3.jpg), fixed, no-repeat, 50vw 100%, 35.2rem);
+
+}
+
+.presentation-3{
+
+    @include pre-backgrounds(pre3, url(../img/presentation-1.jpg), fixed, no-repeat, 50vw 100%, 35.2rem);
+
+}
+
+@mixin pre-content($g-a, $d-f, $f-d, $j-c, $a-i) {
+    
+    grid-area: $g-a;
+    display: $d-f;
+    flex-direction: $f-d;
+    justify-content: $j-c;
+    align-items: $a-i;
+
+}
+
+.presentation__1-2{
+
+    @include pre-content(con1, flex, column, center, center);
+
+}
+
+.presentation__2-2{
+
+    @include pre-content(con2, flex, column, center, center);
+
+}
+
+.presentation__3-2{
+
+    @include pre-content(con3, flex, column, center, center);
+
+}
+
+.presentation-2{
+
+    background-position: right;
+
+}
+
+.presentation__1-2 h2,
+.presentation__2-2 h2,
+.presentation__3-2 h2 {
+
+    font-size: 3rem;
+
+}
+
+.presentation__1-2 button,
+.presentation__2-2 button,
+.presentation__3-2 button {
+
+    width: 11rem;
+    font-size: 1.8rem;
+
+}
+
+/* Media para Tablets pequeñas y celulares */
+
+@media screen and (max-width: 724px) {
+
+    /* Diseño - Index */
+
+    .presentation-1,
+    .presentation-2,
+    .presentation-3 {
+
+        background-size: 100vw 80%;
+        background-attachment: scroll;
+
+    }
+
+    .presentation-2{
+
+        background-position: left;
+
+    }
+
+    .presentation__1-2,
+    .presentation__2-2 {
+
+        margin: 0 0 3rem 0;
+
+    }
+
+    .presentation__3-2{
+
+        margin-bottom: 7rem;
+
+    }
+    /* Diseño - Index */
+
+}

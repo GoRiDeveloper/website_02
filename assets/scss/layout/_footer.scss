@@ -1,0 +1,105 @@
+/* Footer */
+
+footer{
+
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    background-color: $first-color;
+    box-shadow: 5px 0 10px $first-color;
+    margin-top: auto;
+    bottom: 0;
+    z-index: 2;
+
+}
+
+.footer-box{
+
+    display: flex;
+    flex-direction: column;
+    margin: 1.8rem 0;
+
+}
+
+.footer-sn {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 3rem;
+    padding: 0 0 1.8rem 0;
+
+}
+
+.footer-legal {
+
+    @extend .footer-sn;
+
+}
+
+.footer-legal li a,
+.footer-legal-legend p {
+
+    font-family: $second-typography;
+
+}
+
+.footer-legal{
+
+    font-size: 2rem;
+
+}
+
+.footer-legal-legend{
+
+    font-size: 1.5rem;
+
+}
+
+.legend-p{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Media para Tablets grandes y Monitores pequeños */
+
+@media screen and (max-width: 1005px) {
+
+    /* Footer */
+    .footer-legal-legend{
+
+        font-size: 1rem;
+
+    }
+    /* Footer */
+
+}
+
+/* Media para Tablets pequeñas y celulares */
+
+@media screen and (max-width: 724px) {
+
+    /* Footer */
+    .footer-sn{
+
+        font-size: 2rem;
+
+    }
+
+    .footer-legal{
+
+        font-size: 1rem;
+
+    }
+
+    .footer-legal-legend{
+
+        font-size: .4rem;
+
+    }
+    /* Footer */
+
+}

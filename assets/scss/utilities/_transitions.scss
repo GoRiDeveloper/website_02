@@ -1,0 +1,17 @@
+/* Transiciones */
+
+.anim-btn:hover,
+.l-x label:hover,
+h1:hover:not(.not-transition),
+h2:hover:not(.not-transition),
+h3:hover:not(.not-transition),
+h4:hover,
+h5:hover,
+a:hover,
+span:hover,
+i:hover {
+
+    color: $fifth-color;
+    transition: .3s;
+
+}

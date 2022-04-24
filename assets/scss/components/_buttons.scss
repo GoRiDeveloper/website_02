@@ -1,0 +1,51 @@
+/* Botones */
+
+.anim-btn {
+
+    display: inline-block;
+    position: relative;
+    color: $fourth-color;
+    min-width: 130px;
+    height: 50px;
+    font-weight: bold;
+    font-family: $first-typography;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: $first-color;
+    box-shadow: inset 2px 2px 2px 0px $third-shadow, 7px 7px 20px 0px $second-shadow, 4px 4px 5px 0px $second-shadow;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 1;
+
+        &:hover:after{
+
+            width: 100%;
+            left: 0;
+
+        }
+
+            &:after{
+
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 100%;
+                top: 0;
+                right: 0;
+                transition: all 0.3s ease;
+                background-color: $third-color;
+                box-shadow: inset 2px 2px 2px 0px $third-shadow, 7px 7px 20px 0px $second-shadow, 4px 4px 5px 0px $second-shadow;
+                border-radius: 5px;
+                z-index: -1;
+
+            }
+
+                &:active{
+
+                    top: 2px;
+
+                }
+
+}
