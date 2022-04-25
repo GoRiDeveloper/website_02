@@ -1,0 +1,157 @@
+/* Diseño - Ubicacion */
+
+.main-location{
+
+    grid-area: content-0;
+    margin: 7rem 0;
+
+}
+
+.box__location{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100vw;
+
+}
+
+.article__location{
+
+    font-size: 3rem;
+    margin: 3rem 0;
+
+}
+
+#event-0{
+
+    display: none;
+
+}
+
+#event-0:checked ~ .box__location-1{
+
+    top: 0;
+    visibility: visible;
+
+}
+
+.box-in__location{
+
+    margin: 0 0 3rem 0;
+
+    input{
+
+        background: none;
+        border: none;
+        border-bottom: solid 2px $fourth-color;
+        outline: none;
+        width: 50vw;
+        font-size: 2.1rem;
+        font-family: $second-typography;
+        text-transform: uppercase;
+        margin-right: 1rem;
+
+    }
+
+    label{
+
+        position: relative;
+        cursor: pointer;
+        font-size: 2rem;
+
+    }
+
+}
+
+.box__location-1{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    position: relative;
+    top: -130%;
+    visibility: hidden;
+    transition: all 300ms ease-in-out;
+
+}
+
+.article__location__2{
+
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+
+}
+
+.box-in__location__2-1 iframe,
+.box-in__location__2-1 a img {
+
+    width: 37.5rem;
+    height: 28.13rem;
+
+}
+
+.box-in__location__2-1 iframe,
+.box-in__location__2-1 a img {
+
+    max-width: 100vw;
+    max-height: unset;
+
+}
+
+/* Media de corrección */
+
+@media screen and (max-width: 1204px) {
+    
+    /* Diseño - Ubicación */
+    .box-in__location__2-1 iframe,
+    .box-in__location__2-1 a img {
+
+        width: 30.8rem;
+        height: 26.1rem;
+
+    }
+    /* Diseño - Ubicación */
+
+}
+
+/* Media para Tablets grandes y Monitores pequeños */
+
+@media screen and (max-width: 1005px) { 
+
+    /* Diseño - Ubicación */
+    .box-in__location__2-1 iframe,
+    .box-in__location__2-1 a img {
+
+        width: 21.9rem;
+        height: 21.1rem;
+
+    }
+    /* Diseño - Ubicación */
+
+}
+
+/* Media para Tablets pequeñas y celulares */
+
+@media screen and (max-width: 724px) { 
+
+    /* Diseño - Ubicación */
+    .box-in__location__2-1{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        iframe{
+
+            margin-bottom: .7rem;
+        
+        }
+
+    }
+
+    /* Diseño - Ubicación */
+
+}

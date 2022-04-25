@@ -1,0 +1,226 @@
+/* Diseño - Nosotros */
+
+.main-us{
+
+    grid-area: content-0;
+    display: flex;
+    justify-content: center;
+    margin: 7rem 0;
+
+}
+
+.article__us{
+
+    grid-area: l-us;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20.57rem;
+    height: 50rem;
+    background-color: $first-color;
+    box-shadow: 0 0 20px $first-color;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding-bottom: 50px;
+
+    a{
+
+        img{
+
+            width: 12.5rem;
+
+        }
+
+        h2{
+
+            font-size: 3.1rem;
+            padding-left: 15px;
+
+        }
+
+    }
+
+}
+
+.article__us-1,
+.article__us-2,
+.article__us-3,
+.article__us-4 {
+
+    grid-area: con1;
+    background-color: $third-color;
+    box-shadow: 0 0 20px $first-color;
+    width: 20.6rem;
+    height: 25rem;
+
+}
+
+.article__us-1 a img, 
+.article__us-2 a img,
+.article__us-3 a img,
+.article__us-4 a img {
+
+    width: 20.6rem;
+    height: 15rem;
+    overflow: hidden;
+    transition: all 300ms;
+
+}
+
+.article__us-1 a img:hover,
+.article__us-2 a img:hover,
+.article__us-3 a img:hover,
+.article__us-4 a img:hover {
+
+    transform: scale(1.1);
+
+}
+
+.article__us-1 a h2,
+.article__us-2 a h2,
+.article__us-3 a h2,
+.article__us-4 a h2 {
+
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 15px 0;
+
+}
+
+.article__us-1 p,
+.article__us-2 p,
+.article__us-3 p,
+.article__us-4 p {
+
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 10px;
+
+}
+
+.article__us-2{
+
+    grid-area: con3;    
+
+}
+
+.article__us-3{
+
+    grid-area: con2;
+    border-top-right-radius: 1rem;
+
+}
+
+.article__us-4{
+
+    grid-area: con4;
+    border-bottom-right-radius: 1rem;
+
+}
+
+/* Media para Tablets grandes y Monitores pequeños */
+
+@media screen and (max-width: 1005px) {
+    
+    /* Diseño - Nosotros */
+    .article__us{
+
+        width: 14.4rem;
+        height: 40.63rem;
+
+        a{
+
+            img{
+
+                width: 8.75rem;
+
+            }
+
+            h2{
+
+                font-size: 2.19rem;
+                padding-left: 11px;
+
+            }
+
+        }
+
+    }
+
+    .article__us-1,
+    .article__us-2,
+    .article__us-3,
+    .article__us-4 {
+
+        width: 14.4rem;
+        height: 20.32rem;
+
+    }
+
+    .article__us-1 a img,
+    .article__us-2 a img,
+    .article__us-3 a img,
+    .article__us-4 a img {
+
+        width: 14.4rem;
+        height: 11.25rem;
+
+    }
+
+    .article__us-1 a h2,
+    .article__us-2 a h2,
+    .article__us-3 a h2,
+    .article__us-4 a h2 {
+
+        font-size: 1.88rem;
+
+    }
+
+    .article__us-1 p,
+    .article__us-2 p,
+    .article__us-3 p,
+    .article__us-4 p {
+
+        font-size: .95rem;
+
+    }
+    /* Diseño - Nosotros */
+
+}
+
+/* Media para Tablets pequeñas y celulares */
+
+@media screen and (max-width: 724px) {
+
+    /* Diseño - Nosotros */
+    .article__us{
+
+        height: 19rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 1rem;
+
+    }
+
+    .article__us-1{
+
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+
+    }
+
+    .article__us-3{
+
+        border-top-right-radius: 0;
+
+    }
+
+    .article__us-4{
+
+        border-bottom-right-radius: 0;
+
+    }
+    /* Diseño - Nosotros */
+
+}

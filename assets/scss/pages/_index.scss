@@ -4,12 +4,6 @@
 
     transition: all 400ms linear;
 
-    &:hover{
-
-        transform: scale(1.01);
-
-    }
-
 }
 
 @mixin pre-backgrounds($g-a, $bg-img, $bg-at, $bg-re, $bg-sz, $h-pre) {
