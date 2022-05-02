@@ -159,8 +159,7 @@ body {
   width: 100vw;
   min-width: 100vw;
   min-height: 100vh;
-  background-color: #ff9800;
-  overflow-x: hidden; }
+  background-color: #ff9800; }
 
 /* Footer */
 footer {
