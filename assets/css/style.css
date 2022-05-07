@@ -28,21 +28,26 @@ a {
   width: 100vw;
   height: 100vh;
   grid: .1fr 2fr 1fr / 1fr;
-  grid-template-areas: "header" "content-0" "footer"; }
+  grid-template-areas: "header"
+ "content-0"
+ "footer"; }
 
 /* Grid - Index.html */
 .main-presentation {
   grid-area: content-0;
   display: grid;
   grid: repeat(3, 2fr)/1fr 1fr;
-  grid-template-areas: "pre1 con1" "con2 pre2" "pre3 con3"; }
+  grid-template-areas: "pre1 con1"
+ "con2 pre2"
+ "pre3 con3"; }
 
 /* Grid - Nosotros.html */
 .box__us {
   display: grid;
   align-items: center;
   grid: 1fr 1fr/repeat(3, 1fr);
-  grid-template-areas: "l-us con1 con2" "l-us con3 con4"; }
+  grid-template-areas: "l-us con1 con2"
+ "l-us con3 con4"; }
 
 /* Media para Tablets pequeñas y celulares */
 @media screen and (max-width: 724px) {
@@ -50,13 +55,22 @@ a {
   .main-presentation {
     display: grid;
     grid: repeat(6, 0.1fr)/1fr;
-    grid-template-areas: "pre1" "con1" "pre2" "con2" "pre3" "con3"; }
+    grid-template-areas: "pre1"
+ "con1"
+ "pre2"
+ "con2"
+ "pre3"
+ "con3"; }
   /* Diseño - Nosotros */
   .box__us {
     display: grid;
     align-items: center;
     grid: 1fr 1fr / 1fr;
-    grid-template-areas: "con1" "con2" "con3"  "con4" "l-us"; } }
+    grid-template-areas: "con1"
+ "con2"
+ "con3" 
+ "con4"
+ "l-us"; } }
 
 /* Header */
 header {
@@ -214,7 +228,7 @@ footer {
   .footer-legal {
     font-size: 1rem; }
   .footer-legal-legend {
-    font-size: .4rem; }
+    font-size: .75rem; }
   /* Footer */ }
 
 /* Diseño - Index */
