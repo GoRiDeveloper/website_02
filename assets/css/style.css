@@ -25,7 +25,7 @@ a {
 .grid-location,
 .grid-contact {
   display: grid;
-  width: 100vw;
+  /*width: 100vw;*/
   height: 100vh;
   grid: .1fr 2fr 1fr / 1fr;
   grid-template-areas: "header"
@@ -170,8 +170,8 @@ nav ul {
 
 /* Layout del Body */
 body {
-  width: 100vw;
-  min-width: 100vw;
+  /*width: 100vw;
+  min-width: 100vw;*/
   min-height: 100vh;
   background-color: #ff9800; }
 
